@@ -14,11 +14,20 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 header {
+  padding: 16px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--color-1);
   grid-column: 2 / 5;
 }
@@ -31,7 +40,7 @@ header {
 }
 
 .sidebar {
-  height: 50%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,9 +60,68 @@ ul {
   font-size: 24px;
 }
 
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  width: 600px;
+  height: 1.5rem;
+  border: none;
+  border-radius: 15px;
+}
+
+.user-quickbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-quickbar #avatar {
+  height: 40px;
+  width: 40px;
+  background-color: azure;
+  border-radius: 100%;
+}
+
+.lower-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lower-nav #big-avatar {
+  height: 64px;
+  width: 64px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+nav h2 {
+  display: inline;
+}
+
 .icon {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
 }
 
 .content {
