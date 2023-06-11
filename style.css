@@ -24,6 +24,10 @@
     flex: 1;
   }
 
+  .preview-img {
+    height: 7rem !important;
+  }
+
   input {
     width: 360px;
   }
@@ -48,6 +52,10 @@
     height: 16px !important;
   }
 
+  .preview-img {
+    height: 10rem !important;
+  }
+
   .card-container {
     grid-template-columns: 1fr !important;
   }
@@ -66,13 +74,11 @@
 }
 
 body {
-  /* width: 100vw; */
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
   background-color: var(--color-3);
-  /* overflow: hidden; */
 }
 
 /* ----------------- SIDEBAR ----------------- */
@@ -80,9 +86,10 @@ body {
 .sb-container {
   color: white;
   background-color: var(--color-4);
-  /* height: 100%; */
-  grid-row: 1 / 6;
+  grid-row: 1 / 7;
   padding: 0px 16px;
+  border-radius: 0 0 15px 0;
+  box-shadow: 1px 0px 5px black;
 }
 
 .sb-container a, header a {
@@ -275,12 +282,14 @@ nav h2 {
   background-color: var(--color-5);
   padding: 12px;
   border-radius: 8px;
-  box-shadow: 2px 2px 3px rgb(187, 187, 187);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .card a {
   color: black;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .card p {
@@ -303,9 +312,9 @@ nav h2 {
 
 .preview-img {
   margin-top: 8px;
-  width: 100%;
   border: 1px solid rgba(0, 0, 0, 0);
   transition: 0.2s;
+  height: 12rem;
 }
 
 .preview-img:hover {
