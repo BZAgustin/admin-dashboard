@@ -81,7 +81,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
-  background-color: var(--color-3);
+  background: rgb(211,255,234);
+  background: radial-gradient(circle, rgba(211,255,234,1) 0%, rgba(117,166,255,1) 50%);
 }
 
 /* ----------------- SIDEBAR ----------------- */
@@ -260,14 +261,12 @@ nav h2 {
 /* ----------------- CONTENT SECTION ----------------- */
 
 .content {
-  background-color: var(--color-3);
   display: grid;
   grid-template-columns: 5fr 2fr;
   grid-row: 2 / 6;
 }
 
 .projects {
-  background-color: var(--color-3);
   padding: 12px;
 }
 
