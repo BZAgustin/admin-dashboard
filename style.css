@@ -167,7 +167,6 @@ header {
   justify-content: space-between;
   background-color: var(--color-1);
   grid-column: 2 / 6;
-  box-shadow: 2px 2px 3px gray;
 }
 
 .search {
@@ -284,7 +283,7 @@ nav h2 {
   background-color: var(--color-5);
   padding: 12px;
   border-radius: 8px;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .card a {
@@ -380,7 +379,7 @@ hr {
   padding: 12px;
   border-radius: 8px;
   margin-top: 5px;
-  box-shadow: 2px 2px 3px rgb(187, 187, 187);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .users-container {
