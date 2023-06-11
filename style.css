@@ -9,7 +9,7 @@
 :root {
   --color-1: #191f33;
   --color-2: #B85C38;
-  --color-3: #d8d8d8;
+  --color-3: #8ba79c;
   --color-4: #f8642a;
   --color-5: rgb(241, 241, 241);
 }
@@ -46,6 +46,10 @@
   .card .icon {
     width: 16px !important;
     height: 16px !important;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr !important;
   }
 
   .right-bar {
@@ -332,8 +336,9 @@ nav h2 {
 
 .right-bar {
   padding: 8px 12px;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .announcements .card {
