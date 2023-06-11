@@ -21,15 +21,22 @@
 
   header, .content {
     grid-column: 1 / 3 !important;
-    flex: 1;
   }
 
   .preview-img {
-    height: 7rem !important;
+    height: 6rem !important;
   }
 
   input {
     width: 360px;
+  }
+
+  .actions {
+    display: none !important;
+  }
+
+  .user-quickbar {
+    display: none !important;
   }
 
   .projects .card {
@@ -66,10 +73,6 @@
 
   .projects {
     grid-column: 1 / 3;
-  }
-
-  .actions {
-    display: none !important;
   }
 }
 
