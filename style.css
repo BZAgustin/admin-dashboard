@@ -21,6 +21,7 @@
 
   header, .content {
     grid-column: 1 / 3 !important;
+    padding: 15px 30px;
   }
 
   .preview-img {
@@ -48,14 +49,29 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .card-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
+
+  header {
+    padding: 10px 25px;
+  }
 
   input {
     width: 180px !important;
   }
 
+  #big-avatar {
+    height: 40px !important;
+    width: 40px !important;
+  }
+
   .bio-text h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .card .icon {
@@ -65,10 +81,6 @@
 
   .preview-img {
     height: 10rem !important;
-  }
-
-  .card-container {
-    grid-template-columns: 1fr !important;
   }
 
   .right-bar {
