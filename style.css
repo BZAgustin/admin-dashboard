@@ -106,7 +106,8 @@ body {
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
   background: rgb(179,217,208);
-  background: radial-gradient(circle, rgb(106, 170, 155) 0%, rgb(37, 79, 116) 83%);
+  background: radial-gradient(circle, rgb(106, 147, 170) 0%, rgb(35, 69, 99) 83%);
+  /* background-color: #dee5e9; */
 }
 
 /* ----------------- SIDEBAR ----------------- */
@@ -307,8 +308,8 @@ nav h2 {
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgb(216, 216, 216) 0%, rgb(145, 166, 226) 100%);
   padding: 12px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
   transition: 0.5s;
 }
 
@@ -332,7 +333,6 @@ nav h2 {
 }
 
 .card:hover {
-  cursor: pointer;
   box-shadow: 1px 1px 5px #202020;
 }
 
@@ -343,6 +343,10 @@ nav h2 {
 .card:hover h2 {
   color: var(--color-4);
   transition: 0.3s;
+}
+
+.card img:hover {
+  cursor: pointer;
 }
 
 .preview-img {
