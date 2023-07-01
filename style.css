@@ -25,7 +25,7 @@
   }
 
   .preview-img {
-    height: 6rem !important;
+    height: 9rem !important;
   }
 
   input {
@@ -53,9 +53,13 @@
   .card-container {
     grid-template-columns: 1fr !important;
   }
+
+  .preview-img {
+    height: 10rem !important;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
   header {
     padding: 10px 25px;
@@ -74,13 +78,17 @@
     font-size: 1rem;
   }
 
+  .content {
+    padding: 0;
+  }
+
   .card .icon {
     width: 16px !important;
     height: 16px !important;
   }
 
   .preview-img {
-    height: 9rem !important;
+    height: 14rem !important;
   }
 
   .right-bar {
@@ -98,7 +106,7 @@ body {
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
   background: rgb(179,217,208);
-  background: radial-gradient(circle, rgba(179,217,208,1) 0%, rgba(114,162,203,1) 83%);
+  background: radial-gradient(circle, rgb(106, 170, 155) 0%, rgb(37, 79, 116) 83%);
 }
 
 /* ----------------- SIDEBAR ----------------- */
@@ -297,7 +305,7 @@ nav h2 {
 .card {
   font-size: 14px;
   background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(192,202,231,1) 100%);
+  background: radial-gradient(circle, rgb(216, 216, 216) 0%, rgb(145, 166, 226) 100%);
   padding: 12px;
   border-radius: 8px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
@@ -322,6 +330,10 @@ nav h2 {
   box-shadow: 1px 1px 5px #202020;
 }
 
+.card:hover .preview-img {
+  border: 1px solid var(--color-4);
+}
+
 .card:hover h2 {
   color: var(--color-4);
   transition: 0.3s;
@@ -332,10 +344,6 @@ nav h2 {
   border: 1px solid rgba(0, 0, 0, 0);
   transition: 0.2s;
   height: 12rem;
-}
-
-.preview-img:hover {
-  border: 1px solid var(--color-4);
 }
 
 .card .icon {
@@ -387,6 +395,8 @@ hr {
 }
 
 .trending-card {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgb(216, 216, 216) 0%, rgb(145, 166, 226) 100%);
   padding: 12px;
   display: flex;
   justify-content: center;
