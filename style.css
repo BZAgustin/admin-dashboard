@@ -316,7 +316,13 @@ nav h2 {
   color: black;
   text-decoration: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.card a span {
+  font-size: 0.7rem;
 }
 
 .card p {
